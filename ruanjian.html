@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>软件工具</title>
+  <style>
+    /* 全局样式 */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* 通栏样式 */
+    .jumbotron {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 100px;
+    }
+
+    .jumbotron h1 {
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+
+    /* 盒子样式 */
+    .box-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .box {
+      width: 200px;
+      text-align: center;
+      margin: 0 10px;
+    }
+
+    .box img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      opacity: 0; /* 初始时设置图片透明度为0 */
+      animation: fadeIn 1s ease-in-out forwards; /* 应用淡入动画效果 */
+    }
+
+    /* 定义淡入动画的关键帧 */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* 响应式样式 */
+    @media (max-width: 768px) {
+      .jumbotron {
+        padding: 50px;
+      }
+
+      .jumbotron h1 {
+        font-size: 36px;
+      }
+
+      .box-container {
+        flex-wrap: wrap;
+      }
+
+      .box {
+        width: 45%;
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="jumbotron">
+    <h1>软件工具</h1>
+	<h2><a href="index.html">网页简历</a></h2>
+  </header>
+
+  <div class="box-container">
+    <div class="box">
+      <img src="img/software/unity.png" alt="Image 1">
+      <h3>Unity</h3>
+      <!-- <p>文本描述 1</p> -->
+    </div>
+    <div class="box">
+      <img src="img/software/ue.png" alt="Image 2">
+      <h3>Ue</h3>
+      <!-- <p>文本描述 2</p> -->
+    </div>
+    <div class="box">
+      <img src="img/software/3dmax.png" alt="Image 3">
+      <h3>3dmax</h3>
+      <!-- <p>文本描述 3</p> -->
+    </div>
+    <div class="box">
+      <img src="img/software/vs.png" alt="Image 4">
+      <h3>VS2022</h3>
+      <!-- <p>文本描述 4</p> -->
+    </div>
+  </div>
+
+<div class="box-container">
+    <div class="box">
+      <img src="img/software/hbuilder.png" alt="Image 1">
+      <h3>Hbuilder</h3>
+      <!-- <p>文本描述 1</p> -->
+    </div>
+    <div class="box">
+      <img src="img/software/office.png" alt="Image 2">
+      <h3>Office</h3>
+      <!-- <p>文本描述 2</p> -->
+    </div>
+    <div class="box">
+      <img src="img/software/mind.png" alt="Image 3">
+      <h3>Mind</h3>
+      <!-- <p>文本描述 3</p> -->
+    </div>
+    <div class="box">
+      <img src="img/software/mindmaster.png" alt="Image 4">
+      <h3>Mindmaster</h3>
+      <!-- <p>文本描述 4</p> -->
+    </div>
+  </div>
+
+<div class="box-container">
+    <div class="box">
+      <img src="img/software/ae.png" alt="Image 1">
+      <h3>AE</h3>
+      <!-- <p>文本描述 1</p> -->
+    </div>
+    <div class="box">
+      <img src="img/software/an.png" alt="Image 2">
+      <h3>AN</h3>
+      <!-- <p>文本描述 2</p> -->
+    </div>
+    <div class="box">
+      <img src="img/software/pr.png" alt="Image 3">
+      <h3>PR</h3>
+      <!-- <p>文本描述 3</p> -->
+    </div>
+    <div class="box">
+      <img src="img/software/ps.png" alt="Image 4">
+      <h3>PS</h3>
+      <!-- <p>文本描述 4</p> -->
+    </div>
+  </div>
+</body>
+</html>

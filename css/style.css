@@ -1,0 +1,56 @@
+/* 定义全局的字体和背景颜色 */
+* {
+    font-family: "微软雅黑";
+    background-color: #f0f0f0;
+}
+
+/* 定义轮播图容器的宽度、高度、边框和居中对齐 */
+.slider {
+    width: 600px;
+    height: 400px;
+    border: 1px solid #ccc;
+    margin: 50px auto;
+}
+
+/* 定义图片列表的样式，去掉列表符号，取消内外边距 */
+.images {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 定义每个图片链接的样式，去掉下划线，设置宽度、高度和居中对齐 */
+.images a {
+    text-decoration: none;
+    display: block;
+    width: 600px;
+    height: 400px;
+}
+
+/* 定义每个图片的样式，设置宽度、高度和垂直居中对齐 */
+.images img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* 定义按钮的样式，设置宽度、高度、边框、背景颜色、字体颜色和居中对齐 */
+button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: #ccc;
+    color: #fff;
+}
+
+/* 定义上一张按钮的位置，相对于轮播图容器定位，向左偏移50% */
+.prev {
+    position: relative;
+    left: -50%;
+}
+
+/* 定义下一张按钮的位置，相对于轮播图容器定位，向右偏移50% */
+.next {
+    position: relative;
+    right: -50%;
+}

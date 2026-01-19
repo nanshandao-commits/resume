@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>游戏经历</title>
+  <style>
+    /* 添加通栏效果的样式 */
+       .container {
+         width: 100%;
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 20px;
+       }
+   
+       响应式布局
+       @media (max-width: 768px) {
+         .container {
+           padding: 10px;
+         }
+       }
+   /* 添加响应式样式 */
+   @media (max-width: 600px) {
+     .container {
+       max-width: 100%;
+       padding: 10px;
+     }
+     .box {
+       width: calc(50% - 10px);
+     }
+   }
+       /* 头部样式 */
+       header {
+         text-align: center;
+         margin-bottom: 20px;
+         background-color: #f2f2f2;
+         padding: 10px;
+       }
+   
+       h1 {
+         font-size: 36px;
+         font-weight: bold;
+       }
+   
+        /* 盒子样式 */
+    .box-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .box {
+      width: 23%;
+      padding: 21px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: 4px solid #000;
+      margin-bottom: 20px;
+	  margin-left: 10px;
+	  margin-right: 10px;
+	  background-image: url(img/background.png);
+	  color: #dddddd;
+    }
+
+    .box:hover {
+      background-color: #e9e9e9;
+    }
+
+    .box img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+   
+       /* 板块样式 */
+         .section {
+           height: 600px;
+           background-color: #f2f2f2;
+           margin-bottom: 20px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+		   background-image: url(img/background1.png);
+         }
+       }
+
+
+		/* 表格样式 */
+		    table {
+		      width: 200%;
+		      border-collapse: collapse;
+		      margin-top: 20px;
+		    }
+		
+		    th, td {
+		      padding: 10px;
+		      border: 1px solid #ccc;
+		    }
+		
+		    th {
+		      background-color: #f9f9f9;
+		    }
+		.header>a{
+			font-size: 20px;
+			color: #000000;
+		}
+    /* 其他样式 */
+    /* ... */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>游戏经历</h1>
+	  <a href="index - 副本.html"><h2>网页简历</h2></a>
+    </header>
+    <div class="box-container">
+      <div class="box" onclick="scrollToSection('section1')">
+        <!-- <img src="image2.jpg" alt="Image 2"> -->
+        <p>ACT
+		<br>动作类<br>游戏</p>
+      </div>
+      <div class="box" onclick="scrollToSection('section2')">
+        <!-- <img src="image2.jpg" alt="Image 2"> -->
+        <p>ARPG
+		<br>动作角色扮演类游戏</p>
+      </div>
+      <div class="box" onclick="scrollToSection('section3')">
+        <!-- <img src="image3.jpg" alt="Image 3"> -->
+        <p>AVG
+		<br>冒险类<br>游戏</p>
+      </div>
+      <div class="box" onclick="scrollToSection('section4')">
+        <!-- <img src="image4.jpg" alt="Image 4"> -->
+        <p>Sandbox Games
+		<br>沙盒类<br>游戏</p>
+      </div>
+	  <div class="box" onclick="scrollToSection('section5')">
+	    <!-- <img src="image4.jpg" alt="Image 4"> -->
+	    <p>
+		<br>IO类<br>游戏</p>
+	  </div>
+	  <div class="box" onclick="scrollToSection('section6')">
+	    <!-- <img src="image3.jpg" alt="Image 3"> -->
+	    <p>FPS
+		<br>第一人称射击类游戏</p>
+	  </div>
+	  <div class="box" onclick="scrollToSection('section7')">
+	    <!-- <img src="image4.jpg" alt="Image 4"> -->
+	    <p>FTG
+		<br>格斗类<br>游戏</p>
+	  </div>
+	  <div class="box" onclick="scrollToSection('section8')">
+	    <!-- <img src="image4.jpg" alt="Image 4"> -->
+	    <p>LVG
+		<br>恋爱类<br>游戏</p>
+	  </div>
+    </div>
+	<!-- 1-8 -->
+	
+	
+ <div class="box-container">
+   <div class="box" onclick="scrollToSection('section9')">
+     <!-- <img src="image1.jpg" alt="Image 1"> -->
+     <p>MMORPG
+	 <br>大型多人在线角色扮演游戏</p>
+   </div>
+   <div class="box" onclick="scrollToSection('section10')">
+     <!-- <img src="image2.jpg" alt="Image 2"> -->
+     <p>MOBA
+	 <br>多人联机在线竞技<br>游戏</p>
+   </div>
+   <div class="box" onclick="scrollToSection('section11')">
+     <!-- <img src="image3.jpg" alt="Image 3"> -->
+     <p>MCS
+	 <br>音乐<br>游戏</p>
+   </div>
+   <div class="box" onclick="scrollToSection('section12')">
+     <!-- <img src="image4.jpg" alt="Image 4"> -->
+     <p>Asymmetr <br> Battle
+	 <br>不对称<br>战斗竞技场</p>
+   </div>
+   <div class="box" onclick="scrollToSection('section13')">
+     <!-- <img src="image4.jpg" alt="Image 4"> -->
+     <p>PUZ
+	 <br>益智类<br>游戏</p>
+   </div>
+   <div class="box" onclick="scrollToSection('section14')">
+     <!-- <img src="image3.jpg" alt="Image 3"> -->
+     <p>RAC
+	 <br>赛车<br>竞速类<br>游戏</p>
+   </div>
+   <div class="box" onclick="scrollToSection('section15')">
+     <!-- <img src="image4.jpg" alt="Image 4"> -->
+     <p>RTS
+	 <br>即时<br>战略类<br>游戏</p>
+   </div>
+   <div class="box" onclick="scrollToSection('section16')">
+     <!-- <img src="image4.jpg" alt="Image 4"> -->
+     <p>SFTG
+	 <br>模拟<br>格斗类<br>游戏</p>
+   </div>
+ </div>
+ 
+ <!-- 9-16 -->
+	  
+	<div class="box-container">
+	  <div class="box" onclick="scrollToSection('section17')">
+	    <!-- <img src="image1.jpg" alt="Image 1"> -->
+	    <p>SIM
+		<br>模拟经营类<br>游戏</p>
+	  </div>
+	  <div class="box" onclick="scrollToSection('section18')">
+	    <!-- <img src="image2.jpg" alt="Image 2"> -->
+	    <p>SLG
+		<br>策略与战棋类游戏</p>
+	  </div>
+	  <div class="box" onclick="scrollToSection('section19')">
+	    <!-- <img src="image3.jpg" alt="Image 3"> -->
+	    <p>SPG
+		<br>体育类<br>游戏</p>
+	  </div>
+	  <div class="box" onclick="scrollToSection('section20')">
+	    <!-- <img src="image4.jpg" alt="Image 4"> -->
+	    <p>SRPG
+		<br>模拟(策略)角色扮演类游戏</p>
+	  </div>
+	  <div class="box" onclick="scrollToSection('section21')">
+	    <!-- <img src="image4.jpg" alt="Image 4"> -->
+	    <p>STG
+		<br>射击类<br>游戏</p>
+	  </div>
+	  <div class="box" onclick="scrollToSection('section22')">
+	    <!-- <img src="image3.jpg" alt="Image 3"> -->
+	    <p>TBA
+		<br>桌面类<br>游戏</p>
+	  </div>
+	  <div class="box" onclick="scrollToSection('section23')">
+	    <!-- <img src="image4.jpg" alt="Image 4"> -->
+	    <p>PZL
+		<br>解谜类游戏<br>游戏</p>
+	  </div>
+	  <div class="box" onclick="scrollToSection('section24')">
+	    <!-- <img src="image4.jpg" alt="Image 4"> -->
+	    <p>TCG 
+		<br>集换式<br>卡牌游戏<br>数值卡牌</p>
+	  </div>
+	</div>  
+	  
+	  <!-- 17-24 -->
+	  
+	  
+	  
+    </div>
+    <div id="section1" class="section">
+	
+         <table>
+           <thead>
+             <tr>
+               <th>游戏类型</th>
+               <th>游戏名称</th>
+               <th>游戏时长</th>
+			   <th>游戏平台</th>
+               <th>说明</th>
+             </tr>
+           </thead>
+             <tr>
+               <td>ACT（Action Game）动作类游戏</td>
+               <td>滑雪大冒险</td>
+               <td>2年</td>
+			    <td>手游</td>
+               <td>最高得分100万+，氪金20+</td>
+             </tr>
+             <tr>
+               <td>ACT（Action Game）动作类游戏</td>
+               <td>忍者必须死3
+</td>
+               <td>6个月</td>
+			   <td>手游</td>
+               <td>影忍，ssr武器5+，ss宝物若干，小肝浅氪选手，充值500+</td>
+             </tr>
+			<tr>
+			  <td>ACT（Action Game）动作类游戏</td>
+			  <td>神庙逃亡</td>
+			  <td>2小时</td>
+			   <td>手游</td>
+			  <td>最远10000m+，充值10+</td>
+			</tr>
+			<tr>
+			  <td>ACT（Action Game）动作类游戏</td>
+			  <td>永劫无间</td>
+			  <td>1个月</td>
+			   <td>pc</td>
+			  <td>白银段位1500分+，充值98+</td>
+			</tr>
+			 <td>ACT（Action Game）动作类游戏</td>
+			   <td>蛋仔派对</td>
+			   <td>10小时+</td>
+			    <td>pc</td>
+			   <td>和朋友休闲娱乐</td>
+			 </tr>
+			 </tr>
+			  <td>ACT（Action Game）动作类游戏</td>
+			    <td>动物（猛兽）派对</td>
+			    <td>10小时+</td>
+			     <td>pc</td>
+			    <td>和朋友休闲娱乐</td>
+			  </tr>
+			  </tr>
+			   <td>ACT（Action Game）动作类游戏</td>
+			     <td>火柴人系列</td>
+			     <td>20小时+</td>
+			      <td>pc，flash</td>
+			     <td>早期页游比较有印象的游戏之一</td>
+			   </tr>
+			   </tr>
+			    <td>ACT（Action Game）动作类游戏</td>
+			      <td>森林冰火人xilie</td>
+			      <td>20小时+</td>
+			       <td>pc，flash</td>
+			      <td>早期页游比较有印象的游戏之一</td>
+			    </tr>
+             <!-- 添加更多行 -->
+           </tbody>
+         </table>
+       </div>
+    <div id="section2" class="section">
+		<table>
+		           <thead>
+		             <tr>
+		               <th>游戏类型</th>
+		               <th>游戏名称</th>
+		               <th>游戏时长</th>
+					   <th>游戏平台</th>
+		               <th>说明</th>
+		             </tr>
+		           </thead>
+		           <tbody>
+		             <tr>
+		               <td>ARPG （Action RPG）动作角色扮演类游戏</td>
+		               <td>阴阳师</td>
+		               <td>3年</td>
+					    <td>手游</td>
+		               <td>等级：60级，45+账号各一个，充值128+</td>
+		             </tr>
+					 <tr>
+					   <td>ARPG （Action RPG）动作角色扮演类游戏</td>
+					   <td>艾尔登法环</td>
+					   <td>2个月</td>
+					    <td>pc</td>
+					   <td>一周目通关</td>
+					 </tr>
+					 <tr>
+					   <td>ARPG （Action RPG）动作角色扮演类游戏</td>
+					   <td>《骑马与砍杀2》（Mount & Blade）</td>
+					   <td>10小时+</td>
+					    <td>pc</td>
+					   <td>朋友推荐，初步接触</td>
+					 </tr>
+					 <tr>
+					   <td>ARPG （Action RPG）动作角色扮演类游戏</td>
+					   <td>《地下城与勇士 创新世纪》
+（Dungeon & Fighter）</td>
+					   <td>1年</td>
+					    <td>pc</td>
+					   <td>角色等级70+，充值100+</td>
+					 </tr>
+					 <tr>
+					   <td>ARPG （Action RPG）动作角色扮演类游戏</td>
+					   <td>黑暗之魂3</td>
+					   <td>20小时+</td>
+					    <td>pc</td>
+					   <td>一周目通关</td>
+					 </tr>
+					 <tr>
+					   <td>ARPG （Action RPG）动作角色扮演类游戏</td>
+					   <td>天天酷跑</td>
+					   <td>3年</td>
+					    <td>手游</td>
+					   <td>金币满仓，角色十数个，当时版本最好成绩3600万分，充值300+</td>
+					 </tr>
+					 <tr>
+					   <td>ARPG （Action RPG）动作角色扮演类游戏</td>
+					   <td>雷霆战机</td>
+					   <td>1年</td>
+					    <td>手游</td>
+					   <td>刚出机甲的版本，肝出了两套机甲，充值100+</td>
+					 </tr>
+					 <tr>
+					   <td>ARPG （Action RPG）动作角色扮演类游戏</td>
+					   <td>火影忍者</td>
+					   <td>3个月</td>
+					    <td>手游</td>
+					   <td>等级100+，战力90万+，充值100+</td>
+					 </tr>
+					 <tr>
+					   <td>ARPG （Action RPG）动作角色扮演类游戏</td>
+					   <td>尼尔·机械纪元</td>
+					   <td>1个月</td>
+					    <td>pc</td>
+					   <td>一周目通关，充值276+</td>
+					 </tr>
+		             <tr>
+		          
+					 
+		             <!-- 添加更多行 -->
+		           </tbody>
+		         </table>
+		</div>
+		
+	</div>
+    <div id="section3" class="section">
+		<table>
+		           <thead>
+		             <tr>
+		               <th>游戏类型</th>
+		               <th>游戏名称</th>
+		               <th>游戏时长</th>
+					   <th>游戏平台</th>
+		               <th>说明</th>
+		             </tr>
+		           </thead>
+		           <tbody>
+		             <tr>
+		               <td>AVG（Adventure Game）冒险类游戏</td>
+		               <td>超级玛丽</td>
+		               <td>5年</td>
+					    <td>主机</td>
+		               <td>童年回忆，超级玛丽一代全通关选手，隐藏关卡探索爱好者</td>
+		             </tr>
+					 <tr>
+					   <td>AVG（Adventure Game）冒险类游戏</td>
+					   <td>光遇</td>
+					   <td>1年</td>
+					    <td>手游</td>
+					   <td>12翼玩家，游戏世界地图，动画特效做得很好，
+适合和朋友一起休闲</td>
+					 </tr>
+					  <tr>
+		               <td>AVG（Adventure Game）冒险类游戏</td>
+		               <td>《GTA 5》（Grand Theft Auto V）</td>
+		               <td>1年</td>
+					    <td>pc</td>
+		               <td>主线任务完成度60%+，爱好消遣80%+，5块钱买的超级富豪，充值198+</td>
+		             </tr>
+		             <tr>
+		           <tr>
+		               <td>AVG（Adventure Game）冒险类游戏</td>
+		               <td>最后生还者2</td>
+		               <td>10小时+</td>
+					    <td>pc</td>
+		               <td>游戏很还原，经典制作，初步涉足，充值98</td>
+		             </tr>
+					  <tr>
+		               <td>AVG（Adventure Game）冒险类游戏</td>
+		               <td>古墓丽影崛起</td>
+		               <td>20小时+</td>
+					    <td>pc</td>
+		               <td>一周目主线通关，支线部分完成，充值128+</td>
+		             </tr>
+					 <tr>
+					   <td>AVG（Adventure Game）冒险类游戏</td>
+					   <td>刺客信条2</td>
+					   <td>20小时+</td>
+					    <td>pc</td>
+					   <td>一周目主线通关，支线部分完成，充值128+</td>
+					 </tr>
+					 <tr>
+					   <td>AVG（Adventure Game）冒险类游戏</td>
+					   <td>刺客信条·启示录</td>
+					   <td>20小时+</td>
+					    <td>pc</td>
+					   <td>一周目主线通关，支线部分完成，充值128+</td>
+					 </tr>
+					 <tr>
+					   <td>AVG（Adventure Game）冒险类游戏</td>
+					   <td>刺客信条·兄弟会</td>
+					   <td>20小时+</td>
+					    <td>pc</td>
+					   <td>一周目主线通关，支线部分完成，充值128+</td>
+					 </tr>
+					 <tr>
+					   <td>AVG（Adventure Game）冒险类游戏</td>
+					   <td>以撒的结合</td>
+					   <td>3个月</td>
+					    <td>pc</td>
+					   <td>全通关，全剧情玩家，充值48+</td>
+					 </tr>
+					 
+		             <!-- 添加更多行 -->
+		           </tbody>
+		         </table>
+		</div>
+	</div>
+    <div id="section4" class="section">
+		<table>
+		           <thead>
+		             <tr>
+		               <th>游戏类型</th>
+		               <th>游戏名称</th>
+		               <th>游戏时长</th>
+					   <th>游戏平台</th>
+		               <th>说明</th>
+		             </tr>
+		           </thead>
+		           <tbody>
+		             <tr>
+		               <td>沙盒类游戏（Sandbox Games）</td>
+		               <td>我的世界（Minecraft）</td>
+		               <td>3年</td>
+					    <td>pc，手游</td>
+		               <td>手游，pc玩家，建筑能手，红石玩家，辅助器选手，充值89+</td>
+		             </tr>
+					 <tr>
+					   <td>沙盒类游戏（Sandbox Games）</td>
+					   <td>迷你世界</td>
+					   <td>5小时+</td>
+					    <td>手游</td>
+					   <td>懂的都懂</td>
+					 </tr>
+		             <tr>
+		          
+					 
+		             <!-- 添加更多行 -->
+		           </tbody>
+		         </table>
+		</div>
+	</div>
+	<div id="section5" class="section">
+		<table>
+		           <thead>
+		             <tr>
+		               <th>游戏类型</th>
+		               <th>游戏名称</th>
+		               <th>游戏时长</th>
+					   <th>游戏平台</th>
+		               <th>说明</th>
+		             </tr>
+		           </thead>
+		           <tbody>
+		             <tr>
+		               <td>IO类游戏</td>
+		               <td>贪吃蛇大作战</td>
+		               <td>6个月</td>
+					    <td>手游</td>
+		               <td>段位：宗师，风靡一时的游戏</td>
+		             </tr>
+					 <tr>
+					   <td>IO类游戏</td>
+					   <td>弓箭手大作战</td>
+					   <td>3个月</td>
+					    <td>手游</td>
+					   <td>与贪吃蛇大作战一同风靡的小游戏</td>
+					 </tr>
+					 <tr>
+					   <td>IO类游戏</td>
+					   <td>黑洞大作战</td>
+					   <td>20小时+</td>
+					    <td>手游</td>
+					   <td>无脑小游戏</td>
+					 </tr>
+					  <tr>
+		               <td>IO类游戏</td>
+		               <td>球球大作战（应该算休闲娱乐）</td>
+		               <td>3年</td>
+					    <td>手游</td>
+		               <td>超神段位，各类皮肤圣衣总价值超过5万+棒棒糖,充值500+</td>
+		             </tr>
+		             <tr>
+		          
+					 
+		             <!-- 添加更多行 -->
+		           </tbody>
+		         </table>
+		</div>
+	</div>
+	<div id="section6" class="section">
+		<table>
+				           <thead>
+				             <tr>
+				               <th>游戏类型</th>
+				               <th>游戏名称</th>
+				               <th>游戏时长</th>
+							   <th>游戏平台</th>
+				               <th>说明</th>
+				             </tr>
+				           </thead>
+				           <tbody>
+				             <tr>
+				               <td>FPS（First Person Shooting）第一人称射击游戏</td>
+				               <td>穿越火线（CF）</td>
+				               <td>4年</td>
+							    <td>pc</td>
+				               <td>等级70级+，英雄级武器若干，酷爱生化模式，充值1000+</td>
+				             </tr>
+							 <tr>
+							   <td>FPS（First Person Shooting）第一人称射击游戏</td>
+							   <td>守望先锋</td>
+							   <td>3年</td>
+							    <td>pc</td>
+							   <td>等级100+，手残玩家，人菜瘾大，充值100+</td>
+							 </tr>
+							 <tr>
+							   <td>FPS（First Person Shooting）第一人称射击游戏</td>
+							   <td>使命召唤2：现代战争2（cod19）</td>
+							   <td>1年</td>
+							    <td>pc</td>
+							   <td>等级200+，kd忘了，武器全解锁，金枪皮5+，充值500+</td>
+							 </tr>
+							  <tr>
+							   <td>FPS（First Person Shooting）第一人称射击游戏</td>
+							   <td>生死狙击</td>
+							   <td>20小时+</td>
+							    <td>flash</td>
+							   <td>早期页游比较有印象的游戏之一</td>
+							 </tr>
+							 <tr>
+							   <td>FPS（First Person Shooting）第一人称射击游戏（英雄射击BR游戏）</td>
+							   <td>高能英雄</td>
+							   <td>1个月</td>
+							    <td>手游</td>
+							   <td>20级+，铂金段位，apexM体验</td>
+							 </tr>
+				             <tr>
+								 
+				          
+							 
+				             <!-- 添加更多行 -->
+				           </tbody>
+				         </table>
+		</div>
+	</div>
+	<div id="section7" class="section">
+		<table>
+				           <thead>
+				             <tr>
+				               <th>游戏类型</th>
+				               <th>游戏名称</th>
+				               <th>游戏时长</th>
+							   <th>游戏平台</th>
+				               <th>说明</th>
+				             </tr>
+				           </thead>
+				           <tbody>
+				             <tr>
+				               <td>FTG（Fighting Game）格斗类游戏</td>
+				               <td>时空猎人</td>
+				               <td>3个月</td>
+							    <td>手游</td>
+				               <td>角色80级+，充值68+</td>
+				             </tr>
+							 
+				             <tr>
+				          
+							 
+				             <!-- 添加更多行 -->
+				           </tbody>
+				         </table>
+		</div>
+	</div>
+	<div id="section8" class="section">
+		<table>
+				           <thead>
+				             <tr>
+				               <th>游戏类型</th>
+				               <th>游戏名称</th>
+				               <th>游戏时长</th>
+							   <th>游戏平台</th>
+				               <th>说明</th>
+				             </tr>
+				           </thead>
+				           <tbody>
+				             <tr>
+				               <td>LVG（Love Game）恋爱游戏</td>
+				               <td>Lovechoice（拣爱）</td>
+				               <td>1个月</td>
+							    <td>pc</td>
+				               <td>剧情全体验，成就进度80%+，玩游戏难，找对象更难，充值19+</td>
+				             </tr>
+							 
+				             <tr>
+				          
+							 
+				             <!-- 添加更多行 -->
+				           </tbody>
+				         </table>
+		</div>
+	</div>
+	<div id="section9" class="section">
+		<table>
+						           <thead>
+						             <tr>
+						               <th>游戏类型</th>
+						               <th>游戏名称</th>
+						               <th>游戏时长</th>
+									   <th>游戏平台</th>
+						               <th>说明</th>
+						             </tr>
+						           </thead>
+						           <tbody>
+						             <tr>
+						               <td>MMORPG（Massively Multiplayer Online Role Playing Game）<br>大型多人在线角色扮演游戏</td>
+						               <td>逆水寒</td>
+						               <td>10小时+</td>
+									    <td>pc</td>
+						               <td>新手玩家，充值30+</td>
+						             </tr>
+									 <tr>
+									   <td>MMORPG（Massively Multiplayer Online Role Playing Game）<br>大型多人在线角色扮演游戏</td>
+									   <td>《魔兽世界》（World of Warcraft）</td>
+									   <td>1年</td>
+									    <td>pc</td>
+									   <td>角色等级60级，应该是满级，充值100+</td>
+									 </tr>
+									 <tr>
+									   <td>MMORPG（Massively Multiplayer Online Role Playing Game）<br>大型多人在线角色扮演游戏</td>
+									   <td>《星际争霸 II》（Starcraft II）</td>
+									   <td>1年</td>
+									    <td>pc</td>
+									   <td>天梯黄金段位，充值100+</td>
+									 </tr>
+									 <tr>
+									   <td>MMORPG（Massively Multiplayer Online Role Playing Game）<br>大型多人在线角色扮演游戏</td>
+									   <td>梦幻西游2</td>
+									   <td>1年</td>
+									    <td>pc</td>
+									   <td>69级+，贫民玩家真玩不了，充值500+</td>
+									 </tr>
+									 <tr>
+									   <td>MMORPG（Massively Multiplayer Online Role Playing Game）<br>大型多人在线角色扮演游戏</td>
+									   <td>诛仙3</td>
+									   <td>1个月</td>
+									    <td>pc</td>
+									   <td>v2，浅尝辄止，充值12+</td>
+									 </tr>
+									 <tr>
+									   <td>MMORPG（Massively Multiplayer Online Role Playing Game）<br>大型多人在线角色扮演游戏</td>
+									   <td>天堂M2</td>
+									   <td>3天</td>
+									    <td>手游</td>
+									   <td>韩国顶级IP续作，mmo研究游戏</td>
+									 </tr>
+									 <tr>
+									   <td>MMORPG（Massively Multiplayer Online Role Playing Game）<br>大型多人在线角色扮演游戏</td>
+									   <td>天谕</td>
+									   <td>3天</td>
+									    <td>手游</td>
+									   <td>网游转手游，mmo研究游戏</td>
+									 </tr>
+									 <tr>
+									   <td>MMORPG（Massively Multiplayer Online Role Playing Game）<br>大型多人在线角色扮演游戏</td>
+									   <td>精灵M</td>
+									   <td>3天</td>
+									    <td>手游</td>
+									   <td>mmo研究游戏</td>
+									 </tr>
+						             <tr>
+						          
+									 
+						             <!-- 添加更多行 -->
+						           </tbody>
+						         </table>
+		</div>
+	</div>
+  </div>
+<div id="section10" class="section">
+		<table>
+						           <thead>
+						             <tr>
+						               <th>游戏类型</th>
+						               <th>游戏名称</th>
+						               <th>游戏时长</th>
+									   <th>游戏平台</th>
+						               <th>说明</th>
+						             </tr>
+						           </thead>
+						           <tbody>
+						             <tr>
+						               <td>MOBA（Multiplayer Online Battle Arena Games ）多人联机在线竞技游戏</td>
+						               <td>王者荣耀</td>
+						               <td>7年</td>
+									    <td>手游</td>
+						               <td>等级30，v6，无双王者，十个王者印记，多区账号，充值1000+</td>
+						             </tr>
+									 <tr>
+									   <td>MOBA（Multiplayer Online Battle Arena Games ）多人联机在线竞技游戏</td>
+									   <td>英雄联盟</td>
+									   <td>7年</td>
+									    <td>pc</td>
+									   <td>等级70+，黄金选手，云顶之弈爱好者，充值500+</td>
+									 </tr>
+									 <tr>
+									   <td>MOBA（Multiplayer Online Battle Arena Games ）多人联机在线竞技游戏</td>
+									   <td>DOTA2</td>
+									   <td>1个月</td>
+									    <td>pc</td>
+									   <td>英雄联盟都玩不明白还玩DOTA,纯造孽</td>
+									 </tr>
+						             <tr>
+						          
+									 
+						             <!-- 添加更多行 -->
+						           </tbody>
+						         </table>
+		</div>
+	</div>
+  </div>
+  
+  <div id="section11" class="section">
+  	<table>
+  					           <thead>
+  					             <tr>
+  					               <th>游戏类型</th>
+  					               <th>游戏名称</th>
+  					               <th>游戏时长</th>
+  								   <th>游戏平台</th>
+  					               <th>说明</th>
+  					             </tr>
+  					           </thead>
+  					           <tbody>
+  					             <tr>
+  					               <td>MSC（Music Game）音乐游戏</td>
+  					               <td>钢琴块</td>
+  					               <td>6个月</td>
+  								    <td>手游</td>
+  					               <td>最快每秒8点几块</td>
+  					             </tr>
+  								 <tr>
+  								   <td>MSC（Music Game）音乐游戏</td>
+  								   <td>QQ炫舞</td>
+  								   <td>2年</td>
+  								    <td>pc</td>
+  								   <td>等级100+，空格受害严重，舞术宗师，充值1000+</td>
+  								 </tr>
+								 <tr>
+								   <td>MSC（Music Game）音乐游戏</td>
+								   <td>滚动的天空（应该算休闲娱乐）</td>
+								   <td>1个月</td>
+								    <td>手游</td>
+								   <td>休闲游戏</td>
+								 </tr>
+								 <tr>
+								   <td>MSC（Music Game）音乐游戏</td>
+								   <td>Phigros</td>
+								   <td>1个月</td>
+								    <td>手游</td>
+								   <td>多音乐章节解锁，v级及以上10+首，s级30+首</td>
+								 </tr>
+  					             <tr>
+  					          
+  								 
+  					             <!-- 添加更多行 -->
+  					           </tbody>
+  					         </table>
+  		</div>
+  	</div>
+  </div>
+  
+  <div id="section12" class="section">
+  		<table>
+  		  					           <thead>
+  		  					             <tr>
+  		  					               <th>游戏类型</th>
+  		  					               <th>游戏名称</th>
+  		  					               <th>游戏时长</th>
+  		  								   <th>游戏平台</th>
+  		  					               <th>说明</th>
+  		  					             </tr>
+  		  					           </thead>
+  		  					           <tbody>
+  		  					             <tr>
+  		  					               <td>不对称战斗竞技场（Asymmetrical Battle Arena）</td>
+  		  					               <td>第五人格</td>
+  		  					               <td>1个月</td>
+  		  								    <td>手游</td>
+  		  					               <td>初步体验，陪朋友玩</td>
+  		  					             </tr>
+  		  								 
+  		  					             <tr>
+  		  					          
+  		  								 
+  		  					             <!-- 添加更多行 -->
+  		  					           </tbody>
+  		  					         </table>
+  		</div>
+  	</div>
+  </div>
+  
+  <div id="section13" class="section">
+  		<table>
+  		  					           <thead>
+  		  					             <tr>
+  		  					               <th>游戏类型</th>
+  		  					               <th>游戏名称</th>
+  		  					               <th>游戏时长</th>
+  		  								   <th>游戏平台</th>
+  		  					               <th>说明</th>
+  		  					             </tr>
+  		  					           </thead>
+  		  					           <tbody>
+  		  					             <tr>
+  		  					               <td>PUZ（Puzzle Game）益智类游戏</td>
+  		  					               <td>开心消消乐</td>
+  		  					               <td>2年</td>
+  		  								    <td>手游</td>
+  		  					               <td>千关玩家，休闲益智，和朋友休闲，充值6+</td>
+  		  					             </tr>
+										 <tr>
+										   <td>PUZ（Puzzle Game）益智类游戏</td>
+										   <td>天天象棋</td>
+										   <td>1年</td>
+										    <td>手游</td>
+										   <td>象棋爱好者，线上时间不长，用来打谱还算方便，充值12+</td>
+										 </tr>
+										 <tr>
+										   <td>PUZ（Puzzle Game）益智类游戏</td>
+										   <td>围棋/td>
+										   <td>1年</td>
+										    <td>手游</td>
+										   <td>围棋爱好者，线上时间不长，用来打谱还算方便，充值12+</td>
+										 </tr>
+  		  								 <tr>
+  		  								   <td>PUZ（Puzzle Game）益智类游戏</td>
+  		  								   <td>Chess Ultra </td>
+  		  								   <td>1个月</td>
+  		  								    <td>pc</td>
+  		  								   <td>国际象棋，休闲游戏，棋盘和皮肤做得漂亮，充值49+</td>
+  		  								 </tr>
+										 <tr>
+										   <td>PUZ（Puzzle Game）益智类游戏</td>
+										   <td>水果忍者 </td>
+										   <td>3年</td>
+										    <td>手游</td>
+										   <td>水果刀，成就全解锁玩家，童年记忆，充值40+</td>
+										 </tr>
+										 <tr>
+										   <td>PUZ（Puzzle Game）益智类游戏</td>
+										   <td>俄罗斯方块</td>
+										   <td>1年</td>
+										    <td>手游</td>
+										   <td>最早接触到的游戏之一</td>
+										 </tr>
+										 <tr>
+										   <td>PUZ（Puzzle Game）益智类游戏</td>
+										   <td>羊了个羊</td>
+										   <td>15天+</td>
+										    <td>小程序</td>
+										   <td>营销成功的小成本游戏，用户心理被拿捏死死的</td>
+										 </tr>
+										 <tr>
+										   <td>PUZ（Puzzle Game）益智类游戏</td>
+										   <td>数字华容道</td>
+										   <td>10小时+</td>
+										    <td>手游</td>
+										   <td>益智类小游戏</td>
+										 </tr>
+										 <tr>
+										   <td>PUZ（Puzzle Game）益智类游戏</td>
+										   <td>愤怒的小鸟系列 </td>
+										   <td>3年</td>
+										    <td>手游</td>
+										   <td>通关大部分关卡，后续各种版本有涉猎，例如：太空大作战之类的，童年记忆游戏</td>
+										 </tr>
+										 
+										 <tr>
+										   <td>PUZ（Puzzle Game）益智类游戏</td>
+										   <td>Pocket Champs </td>
+										   <td>1个月</td>
+										    <td>手游</td>
+										   <td>休闲手游，放置跑酷类手游</td>
+										 </tr>
+										 <tr>
+										   <td>PUZ（Puzzle Game）益智类游戏</td>
+										   <td>Royal Match </td>
+										   <td>1个月</td>
+										    <td>手游</td>
+										   <td>三消手游，300+关</td>
+										 </tr>
+  		  					             <tr>
+  		  					          
+  		  								 
+  		  					             <!-- 添加更多行 -->
+  		  					           </tbody>
+  		  					         </table>
+  		</div>
+  	</div>
+  </div>
+  
+  <div id="section14" class="section">
+  		<table>
+  		  					           <thead>
+  		  					             <tr>
+  		  					               <th>游戏类型</th>
+  		  					               <th>游戏名称</th>
+  		  					               <th>游戏时长</th>
+  		  								   <th>游戏平台</th>
+  		  					               <th>说明</th>
+  		  					             </tr>
+  		  					           </thead>
+  		  					           <tbody>
+  		  					             <tr>
+  		  					               <td>RAC（Race Game）赛车竞速类游戏</td>
+  		  					               <td>QQ飞车</td>
+  		  					               <td>5年</td>
+  		  								    <td>pc，手游</td>
+  		  					               <td>从端游到手游，端游s车两三辆，手游a车10+辆，充值1000+</td>
+  		  					             </tr>
+  		  								 <tr>
+  		  								   <td>RAC（Race Game）赛车竞速类游戏</td>
+  		  								   <td>《Horizon Zero Dawn》
+（地平线：零黎明）</td>
+  		  								   <td>1个月</td>
+  		  								    <td>pc</td>
+  		  								   <td>全城市通关，全成就玩家，游戏画面简洁，
+赛车手感好，bgm应景，充值20+</td>
+  		  								 </tr>
+										   <tr>
+  		  					               <td>RAC（Race Game）赛车竞速类游戏</td>
+  		  					               <td>登山赛车</td>
+  		  					               <td>2个月</td>
+  		  								    <td>手游</td>
+  		  					               <td>全地图解锁</td>
+  		  					             </tr>
+  		  					             <tr>
+  		  					          
+  		  								 
+  		  					             <!-- 添加更多行 -->
+  		  					           </tbody>
+  		  					         </table>
+  		</div>
+  	</div>
+  </div>
+  
+  <div id="section15" class="section">
+  		<table>
+  		  		  					           <thead>
+  		  		  					             <tr>
+  		  		  					               <th>游戏类型</th>
+  		  		  					               <th>游戏名称</th>
+  		  		  					               <th>游戏时长</th>
+  		  		  								   <th>游戏平台</th>
+  		  		  					               <th>说明</th>
+  		  		  					             </tr>
+  		  		  					           </thead>
+  		  		  					           <tbody>
+ <tr>
+  		  		  					               <td>RTS（Real Time Strategy）即时战略游戏</td>
+  		  		  					               <td>三国杀</td>
+  		  		  					               <td>1年</td>
+  		  		  								    <td>pc，手游</td>
+  		  		  					               <td>曾经的三国杀狂热玩家，角色技能烂熟于心，内奸身份得心应手，充值100+</td>
+  		  		  					             </tr>
+												 <tr>
+												   <td>RTS（Real Time Strategy）即时战略游戏</td>
+												   <td>保卫萝卜3</td>
+												   <td>1年</td>
+												    <td>手游</td>
+												   <td>通关大部分关卡，最后几个大关卡未完美通关
+糖果赛1000万分选手</td>
+												 </tr>
+												
+<tr>
+  		  		  					               <td>RTS（Real Time Strategy）即时战略游戏</td>
+  		  		  					               <td>部落冲突</td>
+  		  		  					               <td>3年</td>
+  		  		  								    <td>手游</td>
+  		  		  					               <td>水晶杯，10本，9本账号各一个，曾是16级部落
+核心成员，部落战支柱充值200+</td>
+  		  		  					             </tr>
+ <tr>
+  		  		  					               <td>RTS（Real Time Strategy）即时战略游戏</td>
+  		  		  					               <td>植物大战僵尸</td>
+  		  		  					               <td>1年</td>
+  		  		  								    <td>pc，手游</td>
+  		  		  					               <td>全通关玩家，童年记忆</td>
+  		  		  					             </tr>
+  		  		  					             <tr>
+  		  		  					             <tr>
+  		  		  					               <td>RTS（Real Time Strategy）即时战略游戏</td>
+  		  		  					               <td>魔兽争霸</td>
+  		  		  					               <td>1年</td>
+  		  		  								    <td>pc</td>
+  		  		  					               <td>说明</td>
+  		  		  					             </tr>
+  		  		  								 
+  		  		  					             <tr>
+  		  		  					          
+  		  		  								 
+  		  		  					             <!-- 添加更多行 -->
+  		  		  					           </tbody>
+  		  		  					         </table>
+  		</div>
+  	</div>
+  </div>
+  
+  
+  <div id="section16" class="section">
+  		<table>
+  		  		  					           <thead>
+  		  		  					             <tr>
+  		  		  					               <th>游戏类型</th>
+  		  		  					               <th>游戏名称</th>
+  		  		  					               <th>游戏时长</th>
+  		  		  								   <th>游戏平台</th>
+  		  		  					               <th>说明</th>
+  		  		  					             </tr>
+  		  		  					           </thead>
+  		  		  					           <tbody>
+  		  		  					             <tr>
+  		  		  					               <td>开放世界冒险游戏（Open World Adventure Game）</td>
+  		  		  					               <td>Maneater （食人鲨）</td>
+  		  		  					               <td>20小时+</td>
+  		  		  								    <td>pc</td>
+  		  		  					               <td>初步体验，充值38+</td>
+  		  		  					             </tr>
+												 <tr>
+												   <td>开放世界冒险游戏（Open World Adventure Game）</td>
+												   <td>原神</td>
+												   <td>1年</td>
+												    <td>pc</td>
+												   <td>90级，主线完成，刷日常，等更新，充值648+</td>
+												 </tr>
+												 <tr>
+												   <td>开放世界冒险游戏（Open World Adventure Game）</td>
+												   <td>巫师3·狂猎</td>
+												   <td>60小时+</td>
+												    <td>pc</td>
+												   <td>80级+，主线完成，一周目大部分刷完</td>
+												 </tr>
+												 <tr>
+												   <td>开放世界冒险游戏（Open World Adventure Game）</td>
+												   <td>塞尔达传说：旷野之息</td>
+												   <td>3个月</td>
+												    <td>主机</td>
+												   <td>神庙探索大半，图真难跑，boss是真难打</td>
+												 </tr>
+  		  		  								 
+  		  		  					             <tr>
+  		  		  					          
+  		  		  								 
+  		  		  					             <!-- 添加更多行 -->
+  		  		  					           </tbody>
+  		  		  					         </table>
+  		</div>
+  	</div>
+  </div>
+  
+  <div id="section17" class="section">
+  		<table>
+  		  		  					           <thead>
+  		  		  					             <tr>
+  		  		  					               <th>游戏类型</th>
+  		  		  					               <th>游戏名称</th>
+  		  		  					               <th>游戏时长</th>
+  		  		  								   <th>游戏平台</th>
+  		  		  					               <th>说明</th>
+  		  		  					             </tr>
+  		  		  					           </thead>
+  		  		  					           <tbody>
+  		  		  					             <tr>
+  		  		  					               <td>SIM（simulation）模拟经营类游戏</td>
+  		  		  					               <td>割草模拟器</td>
+  		  		  					               <td>20小时+</td>
+  		  		  								    <td>pc</td>
+  		  		  					               <td>休闲放松，充值45+</td>
+  		  		  					             </tr>
+												 <tr>
+												   <td>SIM（simulation）模拟经营类游戏</td>
+												   <td>旅行青蛙</td>
+												   <td>3个月</td>
+												    <td>手游</td>
+												   <td>放置，休闲，风靡一时的游戏</td>
+												 </tr>
+  		  		  								 <tr>
+  		  		  								   <td>SIM（simulation）模拟经营类游戏</td>
+  		  		  								   <td>深海垂钓</td>
+  		  		  								   <td>1个月</td>
+  		  		  								    <td>手游</td>
+  		  		  								   <td>休闲钓鱼手游，3级</td>
+  		  		  								 </tr>
+  		  		  					             <tr>
+  		  		  					          
+  		  		  								 
+  		  		  					             <!-- 添加更多行 -->
+  		  		  					           </tbody>
+  		  		  					         </table>
+  		</div>
+  	</div>
+    </div>
+  <div id="section18" class="section">
+  		<table>
+  		  		  					           <thead>
+  		  		  					             <tr>
+  		  		  					               <th>游戏类型</th>
+  		  		  					               <th>游戏名称</th>
+  		  		  					               <th>游戏时长</th>
+  		  		  								   <th>游戏平台</th>
+  		  		  					               <th>说明</th>
+  		  		  					             </tr>
+  		  		  					           </thead>
+  		  		  					           <tbody>
+  		  		  					            
+  		  		  								  <tr>
+  		  		  					               <td>SLG（Simulation Game）策略与战棋类游戏</td>
+  		  		  					               <td>海岛奇兵</td>
+  		  		  					               <td>1年</td>
+  		  		  								    <td>手游</td>
+  		  		  					               <td>30级+，12级司令部，充值68+</td>
+  		  		  					             </tr>
+												  <tr>
+  		  		  					               <td>SLG（Simulation Game）策略与战棋类游戏</td>
+  		  		  					               <td>率土之滨</td>
+  		  		  					               <td>1年</td>
+  		  		  								    <td>pc，手游</td>
+  		  		  					               <td>率土like，一队当时赛季最佳配置武将等级42+，手握数块7级8级地要塞建造爱好者，单队兵力40000+，充值300+</td>
+  		  		  					             </tr>
+												 <tr>
+												   <td>SLG（Simulation Game）策略与战棋类游戏</td>
+												   <td>列王的纷争</td>
+												   <td>1个月</td>
+												    <td>手游</td>
+												   <td>slg-cok类型鼻祖，40级+，荣耀堡3，战力千万+，充值300+</td>
+												 </tr>
+												 <tr>
+												   <td>SLG（Simulation Game）策略与战棋类游戏</td>
+												   <td>全面尸控（SOS）</td>
+												   <td>1个月</td>
+												    <td>手游</td>
+												   <td>slg-cok2.0时代研究型游戏，市政厅15+，充值100美元+</td>
+												 </tr>
+												 <tr>
+												   <td>SLG（Simulation Game）策略与战棋类游戏</td>
+												   <td>万国觉醒（ROK）</td>
+												   <td>1个月</td>
+												    <td>p手游</td>
+												   <td>slg-cok2.0时代研究型游戏</td>
+												 </tr>
+												 <tr>
+												   <td>SLG（Simulation Game）策略与战棋类游戏</td>
+												   <td>寒霜启示录</td>
+												   <td>1个月</td>
+												    <td>手游</td>
+												   <td>slg-cok2.0时代研究型游戏</td>
+												 </tr>
+												 <tr>
+												   <td>SLG（Simulation Game）策略与战棋类游戏</td>
+												   <td>王国纪元</td>
+												   <td>1个月</td>
+												    <td>手游</td>
+												   <td>slg-cok1.0时代研究型游戏，卡牌化先驱，狼羊生态，中小R社交结构变化的开始</td>
+												 </tr>
+												 <tr>
+												   <td>SLG（Simulation Game）策略与战棋类游戏</td>
+												   <td>Total Battle</td>
+												   <td>1个月</td>
+												    <td>手游</td>
+												   <td>slg-cok3.0时代研究型游戏，副玩法轻绑定城建，泛用户转化探索</td>
+												 </tr>
+  		  		  					          <tr>
+  		  		  					            <td>SLG（Simulation Game）策略与战棋类游戏</td>
+  		  		  					            <td>Last War</td>
+  		  		  					            <td>1个月</td>
+  		  		  					             <td>手游</td>
+  		  		  					            <td>slg-cok3.0时代研究型游戏</td>
+  		  		  					          </tr>
+  		  		  								 
+  		  		  					             <!-- 添加更多行 -->
+  		  		  					           </tbody>
+  		  		  					         </table>
+  		</div>
+  	</div>
+    </div>
+    
+    <div id="section19" class="section">
+    <table>
+      		  					           <thead>
+      		  					             <tr>
+      		  					               <th>游戏类型</th>
+      		  					               <th>游戏名称</th>
+      		  					               <th>游戏时长</th>
+      		  								   <th>游戏平台</th>
+      		  					               <th>说明</th>
+      		  					             </tr>
+      		  					           </thead>
+      		  					           <tbody>
+      		  					             <tr>
+      		  					               <td>SPG（Sport Game）体育类游戏</td>
+      		  					               <td>实况足球</td>
+      		  					               <td>1年</td>
+      		  								    <td>手游</td>
+      		  					               <td>黑球员10+，传奇3位，充值100+</td>
+      		  					             </tr>
+      		  								 
+      		  					             <tr>
+      		  					          
+      		  								 
+      		  					             <!-- 添加更多行 -->
+      		  					           </tbody>
+      		  					         </table>
+    		</div>
+    	</div>
+    </div>
+    
+    <div id="section20" class="section">
+   <table>
+     		  		  					           <thead>
+     		  		  					             <tr>
+     		  		  					               <th>游戏类型</th>
+     		  		  					               <th>游戏名称</th>
+     		  		  					               <th>游戏时长</th>
+     		  		  								   <th>游戏平台</th>
+     		  		  					               <th>说明</th>
+     		  		  					             </tr>
+     		  		  					           </thead>
+     		  		  					           <tbody>
+     		  		  					             <tr>
+     		  		  					               <td>SRPG（Simulation RPG）模拟(策略)角色扮演类游戏</td>
+     		  		  					               <td>鹅鸭杀</td>
+     		  		  					               <td>3个月</td>
+     		  		  								    <td>pc</td>
+     		  		  					               <td>和朋友的休闲娱乐游戏，充值22+</td>
+     		  		  					             </tr>
+     		  		  								 <tr>
+     		  		  								   <td>SRPG（Simulation RPG）模拟(策略)角色扮演类游戏</td>
+     		  		  								   <td>太空狼人杀</td>
+     		  		  								   <td>3个月</td>
+     		  		  								    <td>pc</td>
+     		  		  								   <td>和朋友的休闲娱乐游戏，充值12+</td>
+     		  		  								 </tr>
+													 <tr>
+													   <td>SRPG（Simulation RPG）模拟(策略)角色扮演类游戏</td>
+													   <td>赛尔号</td>
+													   <td>2年</td>
+													    <td>pc，flash</td>
+													   <td>童年记忆，100级宠物30+，拥有战神联盟五大精灵，谱尼，哈姆雷特等热门精灵，充值100+</td>
+													 </tr>
+													 <tr>
+													   <td>SRPG（Simulation RPG）模拟(策略)角色扮演类游戏</td>
+													   <td>赛尔号</td>
+													   <td>2年</td>
+													    <td>pc，flash</td>
+													   <td>童年记忆，宠物仓库15页+，100级宠物10+，充值100+</td>
+													 </tr>
+													 <tr>
+													   <td>SRPG（Simulation RPG）模拟(策略)角色扮演类游戏</td>
+													   <td>蛋仔派对</td>
+													   <td>1个月</td>
+													    <td>手游</td>
+													   <td>派对类游戏，等级20+，各模式初体验，</td>
+													 </tr>
+													 <tr>
+													   <td>SRPG（Simulation RPG）模拟(策略)角色扮演类游戏</td>
+													   <td>元梦之星</td>
+													   <td>3天</td>
+													    <td>手游</td>
+													   <td>派对类游戏，等级20+，各模式初体验，派对研究手游</td>
+													 </tr>
+													 
+     		  		  					             <tr>
+     		  		  					          
+     		  		  								 
+     		  		  					             <!-- 添加更多行 -->
+     		  		  					           </tbody>
+     		  		  					         </table>
+    		</div>
+    	</div>
+    </div>
+    
+    <div id="section21" class="section">
+   <table>
+     		  		  					           <thead>
+     		  		  					             <tr>
+     		  		  					               <th>游戏类型</th>
+     		  		  					               <th>游戏名称</th>
+     		  		  					               <th>游戏时长</th>
+     		  		  								   <th>游戏平台</th>
+     		  		  					               <th>说明</th>
+     		  		  					             </tr>
+     		  		  					           </thead>
+     		  		  					           <tbody>
+     		  		  					             <tr>
+     		  		  					               <td>STG（Shooting Game）射击类游戏</td>
+     		  		  					               <td>和平精英</td>
+     		  		  					               <td>2年</td>
+     		  		  								    <td>手游</td>
+     		  		  					               <td>铂金段位，在玩游戏赛季还比较火，玩家都比较厉害，消费100+</td>
+     		  		  					             </tr>
+     		  		  								 <tr>
+     		  		  								   <td>STG（Shooting Game）射击类游戏</td>
+     		  		  								   <td>穿越火线</td>
+     		  		  								   <td>4年</td>
+     		  		  								    <td>pc</td>
+     		  		  								   <td>70级+，英雄级武器若干，消费1000+</td>
+     		  		  								 </tr>
+													 <tr>
+													   <td>STG（Shooting Game）射击类游戏</td>
+													   <td>绝地求生（PUBG）</td>
+													   <td>3年</td>
+													    <td>pc</td>
+													   <td>手残党，kD2.0+消费98+</td>
+													 </tr>
+													 <tr>
+													   <td>STG（Shooting Game）射击类游戏</td>
+													   <td>apex</td>
+													   <td>6个月</td>
+													    <td>pc</td>
+													   <td>手残党，kD0.8+<td>
+													 </tr>
+     		  		  					             <tr>
+     		  		  					          
+     		  		  								 
+     		  		  					             <!-- 添加更多行 -->
+     		  		  					           </tbody>
+     		  		  					         </table>
+    		</div>
+    	</div>
+    </div>
+    
+    <div id="section22" class="section">
+    		<table>
+    		  		  		  					           <thead>
+    		  		  		  					             <tr>
+    		  		  		  					               <th>游戏类型</th>
+    		  		  		  					               <th>游戏名称</th>
+    		  		  		  					               <th>游戏时长</th>
+    		  		  		  								   <th>游戏平台</th>
+    		  		  		  					               <th>说明</th>
+    		  		  		  					             </tr>
+    		  		  		  					           </thead>
+    		  		  		  					           <tbody>
+    		  		  		  					             <tr>
+    		  		  		  					               <td>TAB（Table Game）桌面类游戏</td>
+    		  		  		  					               <td>欢乐斗地主</td>
+    		  		  		  					               <td>2年</td>
+    		  		  		  								    <td>手游</td>
+    		  		  		  					               <td>朋友休闲，打发时间，消费1+</td>
+    		  		  		  					             </tr>
+    		  		  		  								 <tr>
+    		  		  		  								   <td>TAB（Table Game）桌面类游戏</td>
+    		  		  		  								   <td>狼人杀</td>
+    		  		  		  								   <td>3年</td>
+    		  		  		  								    <td>手游</td>
+    		  		  		  								   <td>狼人杀高阶玩家，消费10+</td>
+    		  		  		  								 </tr>
+    		  		  		  					             <tr>
+    		  		  		  					          
+    		  		  		  								 
+    		  		  		  					             <!-- 添加更多行 -->
+    		  		  		  					           </tbody>
+    		  		  		  					         </table>
+    		</div>
+    	</div>
+    </div>
+    
+    <div id="section23" class="section">
+    		<table>
+    		  		  		  					           <thead>
+    		  		  		  					             <tr>
+    		  		  		  					               <th>游戏类型</th>
+    		  		  		  					               <th>游戏名称</th>
+    		  		  		  					               <th>游戏时长</th>
+    		  		  		  								   <th>游戏平台</th>
+    		  		  		  					               <th>说明</th>
+    		  		  		  					             </tr>
+    		  		  		  					           </thead>
+    		  		  		  					           <tbody>
+    		  		  		  					             <tr>
+    		  		  		  					               <td>PZL（Puzzle Game ）解谜类游戏</td>
+    		  		  		  					               <td>纪念碑谷</td>
+    		  		  		  					               <td>20小时+</td>
+    		  		  		  								    <td>手游</td>
+    		  		  		  					               <td>全通关玩家，充值12+</td>
+    		  		  		  					             </tr>
+															 <tr>
+															   <td>PZL（Puzzle Game ）解谜类游戏</td>
+															   <td>纪念碑谷2</td>
+															   <td>20小时+</td>
+															    <td>手游</td>
+															   <td>全通关玩家，充值12+</td>
+															 </tr>
+    		  		  		  								 
+    		  		  		  					             <tr>
+    		  		  		  					          
+    		  		  		  								 
+    		  		  		  					             <!-- 添加更多行 -->
+    		  		  		  					           </tbody>
+    		  		  		  					         </table>
+    		</div>
+    	</div>
+    </div>
+    
+    
+    <div id="section24" class="section">
+    	<table>
+    	  		  		  					           <thead>
+    	  		  		  					             <tr>
+    	  		  		  					               <th>游戏类型</th>
+    	  		  		  					               <th>游戏名称</th>
+    	  		  		  					               <th>游戏时长</th>
+    	  		  		  								   <th>游戏平台</th>
+    	  		  		  					               <th>说明</th>
+    	  		  		  					             </tr>
+    	  		  		  					           </thead>
+    	  		  		  					           <tbody>
+    	  		  		  					             <tr>
+    	  		  		  					               <td>TCG （Trading Card Game）集换式卡牌游戏（数值卡牌）</td>
+    	  		  		  					               <td>第七史诗</td>
+    	  		  		  					               <td>1个月</td>
+    	  		  		  								    <td>手游</td>
+    	  		  		  					               <td>初上手玩家，魔灵like长线数值运营框架研究游戏</td>
+    	  		  		  					             </tr>
+    	  		  		  								 
+														 <tr>
+														   <td>TCG （Trading Card Game）集换式卡牌游戏（数值卡牌）</td>
+														   <td>炉石传说</td>
+														   <td>游戏时间</td>
+														    <td>平台</td>
+														   <td>说明</td>
+														 </tr>
+														 <tr>
+														   <td>TCG （Trading Card Game）集换式卡牌游戏（数值卡牌）</td>
+														   <td>小冰冰传奇</td>
+														   <td>10天+</td>
+														    <td>手游</td>
+														   <td>怀旧服手游研究游戏</td>
+														 </tr>
+    	  		  		  					             <tr>
+    	  		  		  					          
+    	  		  		  								 
+    	  		  		  					             <!-- 添加更多行 -->
+    	  		  		  					           </tbody>
+    	  		  		  					         </table>
+    		</div>
+    	</div>
+    </div>
+  
+  
+  
+  <script>
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

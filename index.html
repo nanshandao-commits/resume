@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>我的网页简历</title>
+  <style>
+    body {
+		
+		background-image: url(img/background1.png); /* 设置背景图片的URL */
+		      background-size: cover; 
+		      margin: 0; /* 去除页面的默认边距 */
+		      padding: 0; /* 去除页面的默认内边距 */
+		
+        font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+      
+          /* 导航栏样式 */
+          .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333333;
+            color: #686868;
+            display: flex;
+            justify-content: center; /* 居中导航文字 */
+            align-items: center; /* 垂直居中导航文字 */
+            padding: 20px;
+            z-index: 9999;
+          }
+      
+          .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+          }
+      
+          .navbar a:hover {
+            color: #ff0000;
+          }
+      
+          /* Banner 样式 */
+          .banner {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px 0;
+          }
+      
+          .banner h1 {
+            color: #333333;
+          }
+      
+          /* 内容容器样式 */
+          .container {
+            margin-top: 120px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+      
+          /* 标题样式 */
+          h2 {
+            color: #333333;
+            margin-top: 40px;
+          }
+		   /* 奖项展示图片样式 */
+		      .awards-image {
+		        width: 200px;
+		        height: 200px;
+		        transition: transform 0.3s ease;
+		      }
+		  
+		      .awards-image:hover {
+		        transform: scale(1.1);
+		      }
+		  
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333333;
+      text-align: center;
+    }
+
+    p {
+      color: #666666;
+      line-height: 1.5;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    .button.animate {
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 10px 0;
+      background-color: #dddddd;
+    }
+
+    .navbar {
+      background-color: #333333;
+      overflow: hidden;
+      animation: slideInDown 1s;
+    }
+
+    .navbar a {
+      float: left;
+      color: #ffffff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #111111;
+    }
+
+    /* 添加通栏样式 */
+    .banner {
+      background-color: #909090;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* 添加不同板块的背景色 */
+    #resume {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    #projects {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center; /* 居中对齐 */
+    }
+
+    #awards {
+      background-color: #e9e9e9;
+      padding: 20px;
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .box {
+      width: calc(25% - 10px);
+      padding: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .box img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .box p {
+      color: #666666;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+ /* 响应式样式 */
+    @media (max-width: 768px) {
+      .jumbotron {
+        padding: 50px;
+      }
+
+      .jumbotron h1 {
+        font-size: 36px;
+      }
+
+    /* 添加响应式样式 */
+   /* @media (max-width: 600px) {
+      .container {
+        max-width: 100%;
+        padding: 10px;
+      }
+      .box {
+        width: calc(50% - 10px);
+      }
+    } */
+/* @media (max-width: 768px) { */
+  /* 在此处添加适应手机屏幕的样式 */
+}
+    /* 导航栏动画效果 */
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+	
+	/* 添加轮播样式 */
+	    .carousel-container {
+	      margin-top: 20px;
+	      position: relative;
+	      overflow: hidden;
+	    }
+	
+	    .carousel-slides {
+	      display: flex;
+	      transition: transform 0.5s ease;
+	    }
+	
+	    .carousel-slide {
+	      flex-shrink: 0;
+	      width: 100%;
+	    }
+	
+	    .carousel-navigation {
+	      position: absolute;
+	      left: 50%;
+	      bottom: 10px;
+	      transform: translateX(-50%);
+	      display: flex;
+	    }
+	
+	    .carousel-navigation button {
+	      background-color: transparent;
+		  background-color: #333333;
+	      border: none;
+	      color: #070707;
+	      font-size: 18px;
+	      margin: 0 5px;
+	      cursor: pointer;
+	      transition: color 0.3s ease;
+	    }
+	
+	    .carousel-navigation button:focus {
+			
+	      outline: none;
+		  	 
+	    }
+	
+	    .carousel-navigation button.active {
+	      color: #ff0000;
+	
+	    }
+	.carousel-dot.active {
+	  background-color: #ff0000;
+	 
+	}
+	    .carousel-dot {
+	      width: 8px;
+	      height: 8px;
+	      border-radius: 50%;
+	      background-color: #000000; /* 默认灰色 */
+		
+	      margin: 0 5px;
+	      cursor: pointer;
+	      transition: background-color 0.3s ease;
+	    }
+	
+	    
+	
+	  /* 导航栏样式 */
+	     .navbar {
+	       position: fixed;
+	       top: 0;
+	       left: 0;
+	       width: 100%;
+	       background-color: #333333;
+	       color: #ffffff;
+	       display: flex;
+	       justify-content: center; /* 将导航文字水平居中 */
+	       align-items: center; /* 将导航文字垂直居中 */
+	       padding: 20px;
+	       z-index: 9999; /* 设置较高的 z-index 值 */
+	     }
+	 
+	     .navbar a {
+	       color: #ffffff;
+	       text-decoration: none;
+	       margin: 0 10px;
+	     }
+	 
+	     .navbar a:hover {
+	       color: #ff0000;
+	     }
+	 
+	     .container {
+	       margin-top: 80px;
+	     }
+		 
+		 /* 爱好区域样式 */
+		     .hobbies-container {
+		       display: flex;
+		       flex-wrap: wrap;
+		       justify-content: center;
+		       align-items: flex-start;
+		     }
+		 
+		     .hobbies-item {
+		       width: 200px;
+		       height: 200px;
+		       background-color: #f0f0f0;
+		       margin: 10px;
+		     }
+		 
+		     .hobbies-item:nth-child(odd) {
+		       order: 1;
+		     }
+		 
+		     .hobbies-item:nth-child(even) {
+		       order: 2;
+		     }
+
+		 /* 职业技能样式 */
+		   .skills-container {
+		         margin-top: 50px;
+		         display: flex;
+		         flex-direction: column;
+		         align-items: center;
+				 color: #2ECC71;
+		       }
+		   
+		       .skills-row {
+		         display: flex;
+		         justify-content: center;
+		         margin-bottom: 20px;
+				 
+		       }
+		   
+		       .skills-box {
+		         display: flex;
+		         align-items: center;
+		         justify-content: center;
+		         width: 300px;
+		         height: 150px;
+		         border: 5px solid #000;
+		         margin: 0 10px;
+				 color: #E74C3C;				 
+		       }
+		   
+		       .skills-box a {
+		         text-decoration: none;
+		         color: #00aaff;
+				 font-size: 20px;
+				  text-decoration: underline
+		       }
+		    
+		
+		    /* 定义标题动画 */
+		      @keyframes scaleAnimation {
+		        0% {
+		          transform: scale(1);
+		        }
+		        100% {
+		          transform: scale(1.1);
+		        }
+		      }
+		  
+		      /* 定义子标签动画 */
+		      @keyframes colorAnimation {
+		        0% {
+		          background-color: #F0F0F0;
+		        }
+		        100% {
+		          background-color: #00FF00;
+		        }
+		      }
+
+ /* 奖项展示样式 */
+    .awards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .awards-item {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #000;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* 定义标题动画 */
+    @keyframes scaleAnimation {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+
+    /* 定义子标签动画 */
+    @keyframes colorAnimation {
+      0% {
+        background-color: #F0F0F0;
+      }
+      100% {
+        background-color: #00FF00;
+      }
+    }
+	.wenzi{
+		display: flex;
+		 flex-shrink: 0;
+		width: 100%;
+	}
+	
+	
+	
+  </style>
+  
+   <script>
+      // JavaScript代码
+      document.addEventListener('DOMContentLoaded', function() {
+        var links = document.querySelectorAll('.navbar a');
+        for (var i = 0; i < links.length; i++) {
+          links[i].addEventListener('click', smoothScroll);
+        }
+  
+        function smoothScroll(event) {
+          event.preventDefault();
+          var targetId = this.getAttribute('href');
+          var targetElement = document.querySelector(targetId);
+          var targetOffsetTop = targetElement.offsetTop;
+  
+          window.scrollTo({
+            top: targetOffsetTop,
+            behavior: 'smooth'
+          });
+        }
+      });
+    </script>
+  
+</head>
+<body>
+  <div class="navbar">
+    <a href="#resume">个人简历</a>
+    <a href="#projects">项目展示</a>
+    <a href="#awards">奖项展示</a>
+	<a href="#skills-container">职业技能</a>
+    <a href="#hobbies">爱好</a>
+  </div>
+
+  <div class="banner">
+    <h1>我的网页简历</h1>
+  </div>
+
+  <div class="container">
+    <h2 id="resume">个人简历</h2>
+    <p>这里是个人简历的内容。</p>
+    <a href="index.html" class="button animate">查看更多</a>
+
+   <h2 id="projects">项目展示</h2>
+      <div class="carousel-container" onmouseover="stopSlideInterval()" onmouseout="startSlideInterval()">
+        <div class="carousel-slides">
+          <div class="carousel-slide">
+            <img src="img/二维码.jpg" >
+			<div class="wenzi">
+			基于Ue4游戏引擎，开发出一款类似与求生之路的FPS游戏。
+			本文通过蓝图编写逻辑代码，游戏界面基于Ue4开发，使得游戏界面简单明了，同时调用了一些函数，完成事件时触发，开发出一款第一人称FPS游戏。目的在于开发出更人性化、更方便的PC端第一人称FPS游戏。
+
+			</div>
+          </div>
+          <div class="carousel-slide">
+			  <img src="img/二维码.jpg" >
+            <!-- <video src="img/森林的囚笼演示.mp4" controls  style="max-width: 100%; height: auto;"></video> -->
+			<div class="wenzi">
+				通过三维游戏开发技术和游戏引擎技术课程的学习，我基本掌握基础地编，键盘事件，场景切换，碰撞系统，音乐音效，动画系统等技术，有上述技术基础支持我可以完成一个简单的跑酷游戏制作
+			</div>
+          </div>
+          <div class="carousel-slide">
+			  <img src="img/二维码.jpg" >
+            <!-- <video src="img/网络游戏期末视频演示.mp4" controls   style="max-width: 100%; height: auto;"></video> -->
+			<div class="wenzi">
+				通过三维游戏开发技术和网络游戏开发课程的学习，我基本掌握预制体，键盘事件，场景切换，碰撞系统，音乐音效，动画系统等技术，有上述技术基础支持我可以完成一个简单的切西瓜游戏制作。在传统的单击游戏的基础上植入服务器和数据库，实现客户端指令发送至服务器，通过服务器修改数据库。完成客户端的登录，注册，排行功能，完成一个网络小游戏的基础功能。
+			</div>
+          </div>
+          <div class="carousel-slide">
+			  <img src="img/二维码.jpg" >
+            <!-- <video src="img/大广赛-赤尾.mp4" controls style="max-width: 100%; height: auto;"></video> -->
+			<div class="wenzi">
+				第十五届大学生广告艺术大赛重庆市优秀奖作品
+			</div>
+          </div>
+        </div>
+        <div class="carousel-navigation">
+          <button class="carousel-dot active" onclick="showSlide(0)"></button>
+          <button class="carousel-dot" onclick="showSlide(1)"></button>
+          <button class="carousel-dot" onclick="showSlide(2)"></button>
+          <button class="carousel-dot" onclick="showSlide(3)"></button>
+        </div>
+      </div>
+  
+      <script>
+        const slides = document.querySelector('.carousel-slides');
+        const dots = document.querySelectorAll('.carousel-dot');
+        let currentIndex = 0;
+         const intervalDuration = 5000; // 自动轮播间隔时间，单位：毫秒
+        let slideInterval;
+  
+        function showSlide(index) {
+          slides.style.transform = `translateX(-${index * 100}%)`;
+          dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+          });
+          currentIndex = index;
+        }
+  
+        function startSlideInterval() {
+          slideInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % dots.length;
+            showSlide(currentIndex);
+          }, intervalDuration);
+        }
+  
+        function stopSlideInterval() {
+          clearInterval(slideInterval);
+        }
+		
+      startSlideInterval();
+		// function pauseCarousel() {
+		//     // 暂停轮播的逻辑
+		//     clearInterval(carouselInterval);
+		//   }
+		
+		//   function playVideo() {
+		//     // 视频播放事件的处理逻辑
+		//     pauseCarousel(); // 暂停轮播
+		//   }
+		
+		//   function pauseVideo() {
+		//     // 视频暂停事件的处理逻辑
+		//     startCarousel(); // 恢复轮播
+		//   }
+		
+		//   // 监听视频的播放和暂停事件
+		//   video.addEventListener('play', playVideo);
+		//   video.addEventListener('pause', pauseVideo);
+		
+		  // 页面加载完成后开始轮播
+		  window.onload = function() {
+		    startCarousel();
+		  };
+		
+      </script>
+
+    <h2 id="awards">奖项展示</h2>
+        <div class="awards-container">
+          <img class="awards-image" src="img/2023年3月-第二十一届专业“第二课堂”软件设计大赛二等奖.jpg" alt="奖项1">
+          <img class="awards-image" src="img/2020-2021年志愿服务先进个人.jpg" alt="奖项2">
+          <img class="awards-image" src="img/2021-2022志愿服务先进个人.jpg" alt="奖项3">
+		   <img class="awards-image" src="./img/第八届“互联网+”软件学院二等奖.jpg" alt="奖项3">
+		    <img class="awards-image" src="img/第八届“互联网+”软件学院优秀奖.jpg" alt="奖项3">
+			 <img class="awards-image" src="img/第八届“党史杯”院赛二等奖.jpg" alt="奖项3">
+			  <img class="awards-image" src="img/2020-2021优秀晨课助教.jpg" alt="奖项3">
+			   <img class="awards-image" src="img/2021-2022软件学院优秀晨课助理.jpg" alt="奖项3">
+			    <img class="awards-image" src="img/第八届“党史杯”校赛二等奖.jpg" alt="奖项3">
+				 <img class="awards-image" src="img/“志愿之光·文明益起来”创建全国文明城区活动中荣获“爱心志愿者”称号.jpg" alt="奖项3">
+				 
+        </div>
+		
+		  <div class="skills-container">
+		       <h2 class="skills-title">职业技能</h2>
+		       <div class="skills-row">
+		         <div class="skills-box"><a href="jinli.html">游戏经历</a></div>
+		         <div class="skills-box"><a href="zuopin.html">个人作品</a></div>
+		         <div class="skills-box"><a href="ruanjian.html">软件工具</a></div>
+		         <!-- <div class="skills-box"><a href="#">超链接文字</a></div> -->
+		       </div>
+		     <!--  <div class="skills-row">
+		         <div class="skills-box"><a href="#">超链接文字</a></div>
+		         <div class="skills-box"><a href="#">超链接文字</a></div>
+		         <div class="skills-box"><a href="#">超链接文字</a></div>
+		         <div class="skills-box"><a href="#">超链接文字</a></div>
+		       </div>
+		     </div> -->
+		
+  <div id="hobbies">
+        <h2>爱好</h2>
+        <div class="box-container">
+          <div class="box">
+            <img src="img/游戏.png" alt="图片1">
+            <p>游戏狂人</p>
+          </div>
+          <div class="box">
+            <img src="img/chatgpt.png" alt="图片2">
+            <p>热爱探索</p>
+          </div>
+          <div class="box">
+            <img src="img/跑步.jpg" alt="图片3">
+            <p>运动达人</p>
+          </div>
+          <div class="box">
+            <img src="img/象棋.jpg" alt="图片4">
+            <p>象棋爱好者</p>
+          </div>
+        </div>
+    <!-- <p>这里是爱好的内容。</p> -->
+
+    <div class="footer">
+      &copy; 2023 我的网页简历. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
